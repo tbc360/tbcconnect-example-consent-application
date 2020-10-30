@@ -26,13 +26,16 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
         ])->validate();
 
+        /**
+         * Send Accept/reject Request
+         */
         HttpRequestGateway::agree($input['email'], isset($input['agree']));
 
         return User::create([
             'name' => $input['name'],
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
-            'tbcconnect_consent' => isset($input['agree'])
+            'tbcconnect_consent' => isset($input['agree']) // Save status in Database
         ]);
     }
 }

@@ -21,7 +21,7 @@
             var _paq = window._paq = window._paq || [];
             _paq.push(['enableLinkTracking']);
             (function() {
-                var u="//localhost:4000/";
+                var u="//360.tbcconnect.ge/";
                 var i=11;
                 _paq.push(['setTrackerUrl', u+'service']);
                 _paq.push(['setSiteId', i]);
