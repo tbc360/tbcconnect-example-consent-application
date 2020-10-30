@@ -1,4 +1,4 @@
-# Consent Management System
+# Tbcconnect Example Small Consent Application 
 
 ## About This Application
 
