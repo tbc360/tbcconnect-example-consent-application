@@ -14,7 +14,7 @@ cp .env.example .env
 
 // 3. modify this fields in .env file
 X_API_KEY=
-CLIENT_ID=cp .env.example .env
+CLIENT_ID=
 CLIENT_SECRET=
 
 DB_CONNECTION=mysql
