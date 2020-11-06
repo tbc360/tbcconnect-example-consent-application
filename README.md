@@ -31,6 +31,6 @@ php artisan key:generate
 php artisan migrate
 
 // 6. run localhost
-php artian serve
+php artisan serve
 
 ```
