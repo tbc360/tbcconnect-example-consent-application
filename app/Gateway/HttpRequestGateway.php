@@ -181,8 +181,6 @@ class HttpRequestGateway
 
         $apiEndpoint = !empty(env(strtoupper($params['app']) . '_API_ENDPOINT')) ? env(strtoupper($params['app']) . '_API_ENDPOINT').'/':'';
 
-        $headers['x-api-key'] = env('X_API_KEY');
-
         $apiVersionTag = !empty(env(strtoupper($params['app']) . '_API_VERSION')) ? env(strtoupper($params['app']) . '_API_VERSION').'/':'';
         $destinationEndpoint =  $apiEndpoint.$apiVersionTag.$params['route'];
 
