@@ -13,7 +13,6 @@ composer install
 cp .env.example .env
 
 // 3. modify this credentials in .env file
-X_API_KEY=
 CLIENT_ID=
 CLIENT_SECRET=
 
